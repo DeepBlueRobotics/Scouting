@@ -1,0 +1,460 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DisplayContact"
+    android:textAlignment="center">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/TEXT_FIELD"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:text="Input Team"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_FIELD"
+            android:id="@+id/match_number"
+            android:hint="Match Number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/team_id"
+            android:layout_below="@+id/match_number"
+            android:hint="Team Name/ID"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/points_alliance"
+            android:layout_below="@+id/team_id"
+            android:hint="Points (Alliance)"/>
+
+        <Spinner
+            android:id="@+id/win_loss"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/points_alliance"
+            android:entries="@array/win_loss_choices"
+            android:prompt="@string/selectWinLoss">
+        </Spinner>
+
+        <Button
+            android:id="@+id/inc_ranking_points"
+            android:layout_below="@id/win_loss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/win_loss"
+            android:text="+ Ranking Pts" />
+
+        <TextView
+            android:id="@+id/ranking_points"
+            android:layout_below="@id/win_loss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dec_ranking_points"
+            android:layout_below="@id/win_loss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/win_loss"
+            android:text="- Ranking Pts"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/auto_label"
+            android:layout_below="@id/ranking_points"
+            android:layout_marginTop="30dp"
+            android:textSize="24dp"
+            android:text="Input Auto Points"
+            />
+        
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/auto_points_input"
+            android:hint="Input"
+            android:textSize="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/ranking_points"
+            android:layout_toRightOf="@id/auto_label"
+            />
+
+        <Button
+            android:id="@+id/inc_lowbar"
+            android:layout_below="@id/auto_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/win_loss"
+            android:text="+ Lowbar" />
+
+        <TextView
+            android:id="@+id/lowbar"
+            android:layout_below="@id/auto_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dec_lowbar"
+            android:layout_below="@id/auto_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/win_loss"
+            android:text="- Lowbar"/>
+
+        <Button
+            android:id="@+id/inc_portcullis"
+            android:layout_below="@id/dec_lowbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/win_loss"
+            android:text="+ Portcullis" />
+
+        <TextView
+            android:id="@+id/portcullis"
+            android:layout_below="@id/dec_lowbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dec_portcullis"
+            android:layout_below="@id/dec_lowbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/win_loss"
+            android:text="- Portcullis"/>
+
+        <Button
+            android:id="@+id/inc_cheval_de_frise"
+            android:layout_below="@id/dec_portcullis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/win_loss"
+            android:text="+ Cheval" />
+
+        <TextView
+            android:id="@+id/cheval_de_frise"
+            android:layout_below="@id/dec_portcullis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dec_cheval_de_frise"
+            android:layout_below="@id/dec_portcullis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/win_loss"
+            android:text="- Cheval"/>
+
+        <Button
+            android:id="@+id/inc_moat"
+            android:layout_below="@id/dec_cheval_de_frise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/win_loss"
+            android:text="+ Moat" />
+
+        <TextView
+            android:id="@+id/moat"
+            android:layout_below="@id/dec_cheval_de_frise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dec_moat"
+            android:layout_below="@id/dec_cheval_de_frise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/win_loss"
+            android:text="- Moat"/>
+
+        <Button
+            android:id="@+id/inc_ramparts"
+            android:layout_below="@id/dec_moat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/win_loss"
+            android:text="+ Ramparts" />
+
+        <TextView
+            android:id="@+id/ramparts"
+            android:layout_below="@id/dec_moat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dec_ramparts"
+            android:layout_below="@id/dec_moat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/win_loss"
+            android:text="- Ramparts"/>
+
+        <Button
+            android:id="@+id/inc_drawbridge"
+            android:layout_below="@id/dec_ramparts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/win_loss"
+            android:text="+ Drawbridge" />
+
+        <TextView
+            android:id="@+id/drawbridge"
+            android:layout_below="@id/dec_ramparts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dec_drawbridge"
+            android:layout_below="@id/dec_ramparts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/win_loss"
+            android:text="- Drawbridge"/>
+
+        <Button
+            android:id="@+id/inc_sallyport"
+            android:layout_below="@id/dec_drawbridge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/win_loss"
+            android:text="+ Sallyport" />
+
+        <TextView
+            android:id="@+id/sallyport"
+            android:layout_below="@id/dec_drawbridge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dec_sallyport"
+            android:layout_below="@id/dec_drawbridge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/win_loss"
+            android:text="- Sallyport"/>
+
+        <Button
+            android:id="@+id/inc_rockwall"
+            android:layout_below="@id/dec_sallyport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/win_loss"
+            android:text="+ Rock Wall" />
+
+        <TextView
+            android:id="@+id/rockwall"
+            android:layout_below="@id/dec_sallyport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dec_rockwall"
+            android:layout_below="@id/dec_sallyport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/win_loss"
+            android:text="- Rock Wall"/>
+
+        <Button
+            android:id="@+id/inc_rough_terrain"
+            android:layout_below="@id/dec_rockwall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/win_loss"
+            android:text="+ Rough Terrain" />
+
+        <TextView
+            android:id="@+id/rough_terrain"
+            android:layout_below="@id/dec_rockwall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dec_rough_terrain"
+            android:layout_below="@id/dec_rockwall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/win_loss"
+            android:text="- Rough Terrain"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/dec_rough_terrain"
+            android:id="@+id/shooter_type"
+            android:entries="@array/shooter_type"
+            android:prompt="@string/selectShooterType">
+        </Spinner>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/shooter_type"
+            android:id="@+id/position_spinner"
+            android:entries="@array/position"
+            android:prompt="@string/selectPosition">
+        </Spinner>
+
+        <Button
+            android:id="@+id/inc_shots_made"
+            android:layout_below="@id/position_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/win_loss"
+            android:text="+ Shots Made" />
+
+        <TextView
+            android:id="@+id/shots_made"
+            android:layout_below="@id/position_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dec_shots_made"
+            android:layout_below="@id/position_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/win_loss"
+            android:text="- Shots Made"/>
+
+        <Button
+            android:id="@+id/inc_shots_taken"
+            android:layout_below="@id/dec_shots_made"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/win_loss"
+            android:text="+ Shots Taken" />
+
+        <TextView
+            android:id="@+id/shots_taken"
+            android:layout_below="@id/dec_shots_made"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dec_shots_taken"
+            android:layout_below="@id/dec_shots_made"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/win_loss"
+            android:text="- Shots Taken"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/dec_shots_taken"
+            android:id="@+id/defense_offense"
+            android:entries="@array/defense_offense_choices"
+            android:prompt="@string/selectDefenseOffense">
+        </Spinner>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/defense_offense"
+            android:id="@+id/end_game"
+            android:entries="@array/end_game_choices"
+            android:prompt="@string/selectEndGame">
+        </Spinner>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/end_game"
+            android:id="@+id/penalties"
+            android:hint="Penalties"/>
+
+        <EditText
+            android:id="@+id/speed_stability_notes"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/penalties"
+            android:textSize="25px"
+            android:hint="Other Comments - Specifically Speed/Stability"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/speed_stability_notes"
+            android:id="@+id/driver_skill"
+            android:entries="@array/driver_skill_choices"
+            android:prompt="@string/selectDriverSkill">
+        </Spinner>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driver_skill"
+            android:layout_marginBottom="28dp"
+            android:onClick="run"
+            android:text="@string/save" />
+
+        <Button
+            android:layout_below="@+id/driver_skill"
+            android:layout_alignRight="@+id/match_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="delete"
+            android:layout_marginBottom="28dp"
+            android:text="Delete"
+            android:id="@+id/delete"/>
+
+    </RelativeLayout>
+</ScrollView>

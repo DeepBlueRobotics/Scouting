@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Scouting</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_text">Create a new team.</string>
+    <string name="editTextID">ID</string>
+    <string name="save">Submit/Save?</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="deleteContact">Are you sure, you want to delete it.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="addNew">Add Another Team</string>
+    <string name="title">Version 0.1</string>
+    <string name="selectWinLoss">Win or Loss</string>
+    <string name="selectShooterType">Shooter Type</string>
+    <string name="selectPosition">Position</string>
+    <string name="selectDefenseOffense">What is it?</string>
+    <string name="selectEndGame">What is it?</string>
+    <string name="selectDriverSkill">Driver Skill</string>
+
+    <string-array name="win_loss_choices">
+        <item>Select Match Result [0]</item>
+        <item>Win [1]</item>
+        <item>Loss [2]</item>
+        <item>Tie [3]</item>
+    </string-array>
+
+    <string-array name="position">
+        <item>Select Position [0]</item>
+        <item>Defense 1 [1]</item>
+        <item>Defense 2 [2]</item>
+        <item>Defense 3 [3]</item>
+        <item>Defense 4 [4]</item>
+        <item>Defense 5 [5]</item>
+        <item>Spybot [6]</item>
+    </string-array>
+
+    <string-array name="defense_offense_choices">
+        <item>Select Strengths</item>
+        <item>Defense [1]</item>
+        <item>Offense [2]</item>
+        <item>Both [3]</item>
+    </string-array>
+
+    <string-array name="end_game_choices">
+        <item>Select End Game [0]</item>
+        <item>challenge [1]</item>
+        <item>climb [2]</item>
+        <item>nothing [3]</item>
+    </string-array>
+
+    <string-array name="driver_skill_choices">
+        <item>Driver\'s Skill [0]</item>
+        <item>very good [1]</item>
+        <item>good [2]</item>
+        <item>fair [3]</item>
+        <item>poor [4]</item>
+        <item>horrendous [5]</item>
+    </string-array>
+
+    <string-array name="shooter_type">
+        <item>Shooter Type [0]</item>
+        <item>None [1]</item>
+        <item>Only High [2]</item>
+        <item>Only Low [3]</item>
+        <item>Both, mainly high [4]</item>
+        <item>Both, mainly low [5]</item>
+        <item>Both, mixed [6]</item>
+    </string-array>
+</resources>

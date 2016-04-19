@@ -1,0 +1,13 @@
+id,match_id,team_name_id,team_points,win_loss,ranking_points,auto_points,low_bar,portcullis,cheval_de_frise,moat,ramparts,drawbridge,sallyport,rockwall,rough_terrain,shooter_type,position,shots_made,shots_taken,defense_or_offense,end_game,penalties,speed_stability_notes,driver_skill
+1,1,256,,Select Match Result [0],0,,0,0,1,0,0,0,0,0,0,Shooter Type [0],Select Position [0],1,1,Offense [2],climb [2],,,good [2]
+2,11,751,62,Loss [2],0,,2,0,0,0,0,0,0,2,0,Shooter Type [0],Defense 2 [2],0,1,Both [3],nothing [3],,,fair [3]
+3,12,5089,41,Loss [2],0,2,0,0,0,2,0,0,0,2,0,Only Low [3],Defense 4 [4],2,3,Offense [2],nothing [3],,,poor [4]
+4,13,4186,49,Loss [2],1,0,0,0,0,0,0,0,0,0,0,Shooter Type [0],Defense 4 [4],0,0,Select Strengths,nothing [3],,dead from the begginning,Driver's Skill [0]
+5,14,6059,30,Loss [2],0,,0,0,0,0,0,0,0,0,0,Shooter Type [0],Select Position [0],0,0,Select Strengths,Select End Game [0],,no show,Driver's Skill [0]
+6,15,1678,104,Win [1],4,,1,0,2,0,0,0,3,1,0,Only High [2],Select Position [0],6,7,Offense [2],challenge [1],,accurate shoot ing and very efficient,very good [1]
+7,16,971,147,Win [1],4,15,4,0,0,0,0,0,0,2,0,Only High [2],Select Position [0],8,8,Offense [2],challenge [1],,amAzing,very good [1]
+8,32,4643,blue,Select Match Result [0],0,,0,0,0,0,0,0,0,0,0,Shooter Type [0],Select Position [0],0,0,Defense [1],nothing [3],,very tall; kept almost falling,fair [3]
+9,33,2035,blue,Select Match Result [0],0,,7,0,2,0,2,0,0,0,0,Shooter Type [0],Select Position [0],0,0,Select Strengths,nothing [3],,,very good [1]
+10,34,1700,,Win [1],0,66,0,0,0,0,1,0,0,0,1,Shooter Type [0],Select Position [0],0,0,Offense [2],challenge [1],,,poor [4]
+11,37,115,blue,Select Match Result [0],0,,2,0,2,0,0,0,0,0,0,Shooter Type [0],Select Position [0],0,0,Select Strengths,Select End Game [0],,,Driver's Skill [0]
+12,38,5026,75,Select Match Result [0],3,0,2,0,0,0,0,0,0,0,0,Only High [2],Spybot [6],0,1,Offense [2],challenge [1],,,poor [4]
