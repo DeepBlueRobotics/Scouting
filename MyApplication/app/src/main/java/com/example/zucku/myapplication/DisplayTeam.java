@@ -16,6 +16,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+* This program is where the user enters all the data.
+*/
 public class DisplayTeam extends Activity {
     TextView match_number;
     TextView team_id;
