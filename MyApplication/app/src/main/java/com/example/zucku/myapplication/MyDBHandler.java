@@ -13,6 +13,9 @@ import android.util.Log;
 
 public class MyDBHandler extends SQLiteOpenHelper {
 
+    /**
+     * Used a static variable because of how it can be easily used between all the classes.
+     */
     public static MyDBHandler handler;
     private static final int DATABASE_VERSION = 1;
 
@@ -45,6 +48,10 @@ public class MyDBHandler extends SQLiteOpenHelper {
     public static final String TEAMS_COLUMN_SPEED_STABILITY_NOTES = "speed_stability_notes";
     public static final String TEAMS_COLUMN_DRIVER_SKILL = "driver_skill";
 
+    /**
+     * created
+     * @param context
+     */
     public MyDBHandler(Context context)
     {
         super(context, DATABASE_NAME , null, DATABASE_VERSION);
@@ -62,6 +69,10 @@ public class MyDBHandler extends SQLiteOpenHelper {
         handler = this;
     }
 
+    /**
+     * create database with sql command statement
+     * @param db
+     */
     @Override
     public void onCreate(SQLiteDatabase db) {
 

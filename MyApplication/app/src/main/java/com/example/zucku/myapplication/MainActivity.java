@@ -29,6 +29,10 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * All the logic in this file goes into creating new teams, looking at previously created teams, and
+ * finally uploading the info to a database (.csv) file.
+ */
 public class MainActivity extends AppCompatActivity {
     private ListView obj;
     private EditText fileName;
@@ -37,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
     ArrayAdapter arrayAdapter;
     AppCompatActivity x;
 
+    /**
+     * created on the creation of the app and initialize stuff.
+     * @param savedInstanceState required
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         x = this;
 
+        // if delete button pressed
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i("ME", "Init Button Export");
 
+        // if refresh button clicked
         refresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // if export button pressed
         export.setOnClickListener(new View.OnClickListener() {
             SQLiteDatabase sqldb = handler.getReadableDatabase(); //My Database class
             Cursor c = null;
@@ -168,6 +179,7 @@ public class MainActivity extends AppCompatActivity {
         obj = (ListView)findViewById(R.id.listView1);
         obj.setAdapter(arrayAdapter);
 
+        // if object pressed
         obj.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {

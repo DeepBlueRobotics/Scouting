@@ -17,8 +17,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
-* This program is where the user enters all the data.
-*/
+ * Displays team with all the data.
+ */
 public class DisplayTeam extends Activity {
     TextView match_number;
     TextView team_id;
@@ -47,6 +47,10 @@ public class DisplayTeam extends Activity {
     EditText penalties;
     EditText speed_stability_notes;
 
+    /**
+     * initialization
+     * @param savedInstanceState required
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
